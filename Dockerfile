@@ -9,4 +9,4 @@ COPY . /webserver
 EXPOSE 4080
 
 ENTRYPOINT ["python3"]
-CMD ["app2.py"]
+CMD ["app.py"]
