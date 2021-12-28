@@ -10,9 +10,9 @@ def main():
 def about():
     return render_template('about.html')
 
-@app.route("/ashok.html")
+@app.route("/hello.html")
 def ashok():
-    return render_template('ashok.html')
+    return render_template('hello.html')
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=80)
