@@ -18,8 +18,17 @@ Install python3 on local host or virual env
 `docker image ls`
 
 ### Run the app in the container in the foreground
-`docker container run -p 8000:4080 --name myflaskapp flaskapp:latest`
+`docker container run -p 8000:4080 --name myflaskapp --rm flaskapp:latest`
 
 ### Run the app in the container in the detached and interactive mode
-`docker container run -dit -p 8000:4080 --name myflaskapp flaskapp:latest`
+`docker container run -dit -p 8000:4080 --name myflaskapp --rm flaskapp:latest`
+
+### Get interactive bash terminal into the container
+`docker container exec -it myflaskapp bash`
+
+### Get interactive python terminal into the container
+`docker container exec -it myflaskapp python3`
+
+### Attach to the container but you can not do much here. Press Ctl+p Ctl+q to come out without stopping the container
+docker attach myflaskapp
 
