@@ -1,5 +1,5 @@
 ### Example webserver
-This is a simple web server based on Flask 
+This is a simple web server based on Flask. This version of code is specific to Ubuntu OS.
 
 ### To run this websever  locally
 Install python3 on local host or virual env
