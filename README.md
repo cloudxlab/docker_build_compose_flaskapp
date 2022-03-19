@@ -30,12 +30,12 @@ Install python3 on local host or virual env
 `docker container exec -it myflaskapp python3`
 
 ### Attach to the container but you can not do much here. Press Ctl+p Ctl+q to come out without stopping the container
-docker attach myflaskapp
+`docker attach myflaskapp`
 
 #### check the docker logs
-docker logs myflaskapp
+`docker logs myflaskapp`
 
 #### run the curl to verify that app is working
-curl http://localhost:8000
+`curl http://localhost:8000`
 
 
