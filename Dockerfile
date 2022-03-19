@@ -4,8 +4,6 @@ RUN apt-get update && apt-get install -y python3-pip
 
 WORKDIR /webserver
 
-
-
 COPY . /webserver/
 
 RUN ls -la /webserver/*
