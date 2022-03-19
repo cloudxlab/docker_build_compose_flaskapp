@@ -1,11 +1,14 @@
-FROM centos:latest
+FROM ubuntu:latest
 
-RUN yum -y install python3 
+RUN apt-get update && apt-get install -y python3-pip 
 RUN pip3 install flask
 
 WORKDIR /webserver
 
-COPY . /webserver
+COPY . /webserver/
+
+RUN ls -la /webserver/*
+
 EXPOSE 4080
 
 ENTRYPOINT ["python3"]
