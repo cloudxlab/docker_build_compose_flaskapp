@@ -1,18 +1,18 @@
 ### Example webserver
-This is a simple web server based on Flask. This version of code is specific to Ubuntu OS.
+This is a simple web server based on Flask 
 
-### To run this websever  locally
+#### To run this websever locally
 Install python3 on local host or virual env
 `pip install -r requirements.txt`
 
-### To run the app
+#### To run the app on the host
 `python3 app.py`
 
-### Connect to webserver 
+#### Connect to webserver running on the host
 `http://0.0.0.0:4080`
 
 ### Build docker image 
-`docker  build -t flaskapp:latest  .`
+`docker build -t flaskapp:latest .`
 
 ### List the image
 `docker image ls`
@@ -31,4 +31,11 @@ Install python3 on local host or virual env
 
 ### Attach to the container but you can not do much here. Press Ctl+p Ctl+q to come out without stopping the container
 docker attach myflaskapp
+
+#### check the docker logs
+docker logs myflaskapp
+
+#### run the curl to verify that app is working
+curl http://localhost:8000
+
 
