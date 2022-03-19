@@ -1,4 +1,4 @@
-### webserver
+### Example webserver
 This is a simple web server based on Flask 
 
 ### To run this websever  locally
