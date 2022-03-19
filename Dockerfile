@@ -1,13 +1,18 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y python3-pip 
-RUN pip3 install flask
 
 WORKDIR /webserver
+
+
 
 COPY . /webserver/
 
 RUN ls -la /webserver/*
+
+#RUN pip3 install flask
+# you can run pip install -r
+RUN pip install -r requirements.txt
 
 EXPOSE 4080
 
